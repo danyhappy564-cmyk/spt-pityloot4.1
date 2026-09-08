@@ -40,7 +40,7 @@
        server is running and holding the file. -->
   <Target Name="DeployToSpt" AfterTargets="Build" Condition="'$(SkipDeploy)' != 'true' AND Exists('$(SptRoot)')">
     <PropertyGroup>
-      <ModDeployDir>$(SptRoot)\SPT\user\mods\PityLoot\</ModDeployDir>
+      <ModDeployDir>$(SptRoot)\SPT_Runtime\user\mods\PityLoot\</ModDeployDir>
     </PropertyGroup>
     <ItemGroup>
       <ConfigFiles Include="$(MSBuildProjectDirectory)\config\*.json" />
